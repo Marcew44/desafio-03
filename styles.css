@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*↓↓ Home ↓↓ */
+body {
+    box-sizing: border-box;
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    padding: 2%;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+.navbar_text:hover {
+    transform: scale(1.1); 
+}
+nav a.active{
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #ffd700;
+    border-width: 3px;
+ }
+.navbar_text {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 350;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: all .2s ease-in-out; 
+}
+.iconpng {
+    float: left;
+}
+.titulo_content {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 25px;
+}
+.titulo_links {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.9rem;
+    margin: 5px;
+}
+.surname {
+    color: #ffd700;
+}
+.content_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content {
+    margin: 1%;
+}
+.descricao_content {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+}
+.button_links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid #ffd700;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+}
+.rodape {
+    color: #000000;
+    background-color: #ffd700;
+    border-color: #ffd700;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 50vh 0 50vh #ffd700;
+}
+.rodapeimg_inova {
+    width: 10%;
+    transition: all .2s ease-in-out; 
+
+}
+.rodapeimg_alura {
+    width: 9%;
+    margin-bottom: 9px;
+    margin-left: 19px;
+    transition: all .2s ease-in-out; 
+}
+.espaco_home {
+    margin:35px;
+}
+.espaco_habilidades {
+    margin: 25px;
+}
+.rodapeimg_inova:hover { 
+ transform: scale(1.1); 
+}
+.rodapeimg_alura:hover { 
+transform: scale(1.1); 
+}
+/*↑↑ Home ↑↑*/
+/*↓↓ Habilidades ↓↓ */
+.frontendimg {
+    width: 45%;
+    float: right;
+    margin-top: -230px;
+    margin-right: 40px;
+}
+.cert_icon {
+    width: 24px;
+    height: 29px;
+}
+.button_cert {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid #ffd700;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    padding: 15px;
+    margin-top: 25px;
+   margin-bottom: 165px;
+}
+/*↑↑ Habilidades ↑↑*/
+/*↓↓ Projetos ↓↓ */
+.projetos_flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 55px;
+    margin-bottom: 104px;
+}
+  .projetos_img1:hover{
+    opacity: 0.3;
+  }
+  .projetos_img2:hover{
+    opacity: 0.3;
+  }
+  .projetos_img3:hover{
+    opacity: 0.3;
+  }
+.projetos_img1 {
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.projetos_img2 {
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.projetos_img3 {
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.texto_hover {
+    opacity: 0; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: center;
+    align-items: center; 
+    justify-content: center; 
+    object-position: center;
+    transition: opacity .5s ease;
+    pointer-events: none; 
+    top: 0;
+    left: 0;
+}
+.hover_img {
+    position: relative;
+}
+.hover_img:hover .texto_hover {
+    opacity: 1;
+}
+ 
+/*↑↑ Projetos ↑*/
+
+ @media (max-width: 980px) {
+    .cabecalho{
+        padding: 10%;  
+   }
+   .main_content {
+    width: auto;
+text-align: center;}
+.titulo_links {
+    text-align: center;
+}
+.links {
+align-items: center; }
+.button_links {
+    width: 15.625rem;
+}
+.rodapeimg_inova {
+    width: 25%;
+    padding-bottom: 5px;
+}
+.rodapeimg_alura {
+    width: 23%;
+}
+.navbar_text { 
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.espaco_habilidades {
+    margin-bottom: -70px;
+}
+.button_cert {
+    width: auto;
+   
+}
+.frontendimg {
+    width: auto;
+    margin-top: 35px;
+    margin-left: 48px;
+
+}
+.projetos_flexbox {
+    flex-direction: column;
+}
+.espaco_projetos {
+    margin-top:-55px;
+}
+ }
+
+
+
